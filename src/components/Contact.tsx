@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Mail, Github, Linkedin, Briefcase, Send, CheckCircle, XCircle } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -12,6 +13,11 @@ const Contact = () => {
   });
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('y7ErIv2KqYUZ8K17u');
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -21,41 +27,74 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate form fields
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+      return;
+    }
+
     setStatus('sending');
 
-    setTimeout(() => {
+    // Prepare template parameters
+    const templateParams = {
+      to_name: formData.name,
+      from_name: formData.email,
+      message: formData.message,
+    };
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'default_service',      // Your service ID
+        'template_1h84quw',     // Your template ID
+        templateParams
+      );
+
+      // Success
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
 
+      // Reset to idle after 5 seconds
       setTimeout(() => {
         setStatus('idle');
-      }, 3000);
-    }, 1500);
+      }, 5000);
+    } catch (error) {
+      // Error
+      console.error('EmailJS Error:', error);
+      setStatus('error');
+
+      // Reset to idle after 5 seconds
+      setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+    }
   };
 
   const socialLinks = [
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com',
+      url: 'https://github.com/MRili123',
       color: 'hover:text-slate-900 dark:hover:text-white'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/ilias-jebrane-327830294/',
       color: 'hover:text-blue-600'
     },
     {
       name: 'Indeed',
       icon: Briefcase,
-      url: 'https://indeed.com',
+      url: 'https://profile.indeed.com/?hl=fr_MA&co=MA&from=gnav-jobseeker-profile--profile-one-frontend',
       color: 'hover:text-blue-700'
     },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:ilias.jebrane@example.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=jebrane.ilias@gmail.com',
       color: 'hover:text-red-600'
     }
   ];
@@ -94,12 +133,12 @@ const Contact = () => {
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   {socialLinks.map((social, idx) => {
                     const Icon = social.icon;
+                    const isEmail = social.url.startsWith('mailto:');
                     return (
                       <motion.a
                         key={idx}
                         href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        {...(!isEmail && { target: "_blank", rel: "noopener noreferrer" })}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -117,7 +156,7 @@ const Contact = () => {
 
               <div className="mt-8 p-6 bg-white/50 dark:bg-slate-900/50 rounded-xl backdrop-blur-sm">
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                  "I'm always excited to collaborate on innovative projects and discuss new opportunities. Whether you have a project in mind or just want to connect, feel free to reach out!"
+                  "{t.contact.description}"
                 </p>
               </div>
             </div>
@@ -214,6 +253,18 @@ const Contact = () => {
                 >
                   <p className="text-green-700 dark:text-green-400 text-sm text-center">
                     {t.contact.success}
+                  </p>
+                </motion.div>
+              )}
+
+              {status === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 p-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-xl"
+                >
+                  <p className="text-red-700 dark:text-red-400 text-sm text-center">
+                    {t.contact.error}
                   </p>
                 </motion.div>
               )}

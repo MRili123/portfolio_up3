@@ -1,58 +1,52 @@
-export const skillsData = {
+const skillsData = {
   languages: [
+    'PHP',
     'Python',
-    'JavaScript',
-    'TypeScript',
     'Java',
-    'C++',
-    'SQL'
+    'JavaScript',
+    'HTML/CSS',
+    'SQL',
+    'PL/SQL'
   ],
   frameworks: [
-    'React',
+    'Laravel',
     'Node.js',
-    'Express',
-    'FastAPI',
-    'Django',
-    'Next.js',
-    'TensorFlow',
-    'PyTorch'
+    'Bootstrap',
+    'Livewire',
+    'Spring Boot',
+    'React'
   ],
   tools: [
-    'Git',
+    'Git & GitHub',
     'Docker',
-    'AWS',
     'Linux',
+    'MySQL',
     'MongoDB',
-    'PostgreSQL',
-    'Redis'
+    'Postman',
+    'VS Code'
   ],
   aiml: [
-    'Machine Learning',
     'Deep Learning',
-    'NLP',
-    'Computer Vision',
-    'LLMs',
-    'RAG Systems'
+    'Machine Learning',
+    'Neural Networks',
+    'Data Analysis',
+    'Cloud Computing'
   ]
 };
 
-export const experienceData = [
+const experienceData = [
   {
-    title: 'Senior Software Engineer',
-    company: 'Tech Company',
-    period: '2022 - Present',
-    description: 'Leading development of AI-powered solutions and microservices architecture'
+    title: 'Full Stack Developer Intern',
+    company: 'Zoom In Media, Kénitra',
+    period: '2023 - 2024',
+    description: 'Contributed to the development of a real estate management web application (Al Moulate) using Laravel, Bootstrap, and Livewire.'
   },
   {
-    title: 'AI Engineer',
-    company: 'AI Startup',
-    period: '2020 - 2022',
-    description: 'Developed machine learning models and deployed production AI systems'
-  },
-  {
-    title: 'Software Developer',
-    company: 'Software House',
-    period: '2018 - 2020',
-    description: 'Built full-stack web applications and RESTful APIs'
+    title: 'Back-End Developer Intern',
+    company: 'Municipality of Kénitra',
+    period: '2022 - 2023',
+    description: 'Developed a user management observatory web application using native PHP and Bootstrap.'
   }
 ];
+
+export { skillsData, experienceData };

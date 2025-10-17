@@ -2,24 +2,46 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Project, projectsData } from '../data/projects';
 import { Search, ExternalLink, X, Download, ChevronLeft, ChevronRight, CheckCircle, Code } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const AllProjects = () => {
+  const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Merge project data with translations
+  const getTranslatedProjects = () => {
+    return projectsData.map((project, index) => {
+      const projectKey = `project${index + 1}` as keyof typeof t.projects;
+      const translatedProject = t.projects[projectKey] as any;
+      
+      return {
+        ...project,
+        title: translatedProject?.title || project.title,
+        description: translatedProject?.description || project.description,
+        detailedDescription: translatedProject?.detailedDescription || project.detailedDescription,
+        role: translatedProject?.role || project.role,
+        duration: translatedProject?.duration || project.duration,
+        features: translatedProject?.features || project.features
+      };
+    });
+  };
+
+  const translatedProjects = getTranslatedProjects();
+
   const filteredProjects = useMemo(() => {
-    if (!searchQuery.trim()) return projectsData;
+    if (!searchQuery.trim()) return translatedProjects;
     
     const query = searchQuery.toLowerCase();
-    return projectsData.filter(project => 
+    return translatedProjects.filter(project => 
       project.title.toLowerCase().includes(query) ||
       project.description.toLowerCase().includes(query) ||
       project.technologies.some(tech => tech.toLowerCase().includes(query)) ||
       (project.frameworks?.some(fw => fw.toLowerCase().includes(query))) ||
       (project.tools?.some(tool => tool.toLowerCase().includes(query)))
     );
-  }, [searchQuery]);
+  }, [searchQuery, translatedProjects]);
 
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
@@ -52,7 +74,7 @@ const AllProjects = () => {
           className="mb-12"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white">
-            All Projects
+            {t.projects.allProjects}
           </h1>
 
           <div className="w-full max-w-2xl mx-auto">
@@ -60,7 +82,7 @@ const AllProjects = () => {
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
               <input
                 type="text"
-                placeholder="Search projects by name, technology, or description..."
+                placeholder={t.projects.search}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-6 py-4 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-slate-900 dark:text-white text-lg shadow-sm"
@@ -87,7 +109,7 @@ const AllProjects = () => {
               className="text-center py-20"
             >
               <p className="text-xl text-slate-600 dark:text-slate-400">
-                No projects found. Try a different search term.
+                {t.projects.noResults}
               </p>
             </motion.div>
           ) : (
@@ -149,7 +171,7 @@ const AllProjects = () => {
                         className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        View Project
+                        {t.projects.viewProject}
                         <ExternalLink size={16} className="ml-1" />
                       </a>
                     )}

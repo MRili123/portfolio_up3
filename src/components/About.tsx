@@ -231,6 +231,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({
 };
 
 const Certificates = () => {
+  const { t } = useLanguage();
   const [showAll, setShowAll] = React.useState(false);
   
   const certificates = [
@@ -302,10 +303,10 @@ const Certificates = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
-            Certifications
+            {t.certificates.title}
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            My professional certifications and completed courses
+            {t.certificates.subtitle}
           </p>
         </motion.div>
         
@@ -330,7 +331,7 @@ const Certificates = () => {
               onClick={() => setShowAll(true)}
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-slate-800 transition-all duration-300"
             >
-              View All Certificates
+              {t.certificates.viewAll}
             </button>
           </div>
         )}
@@ -358,42 +359,43 @@ const Experience = () => {
             {t.experience.title}
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            My professional journey and work experience
+            {t.experience.subtitle}
           </p>
         </motion.div>
 
         <div ref={experienceRef} className="max-w-4xl mx-auto relative">
           <div className="space-y-8">
             <ExperienceCard
-              role="Full Stack Developer"
-              company="Tech Innovations Inc."
-              type="job"
-              duration="Jan 2023 - Present"
-              location="Paris, France"
+              role={t.experience.exp1}
+              company="Zoom In Media"
+              type="internship"
+              duration="2023 - 2024"
+              location="Kénitra, Morocco"
               tasks={[
-                "Developed and maintained responsive web applications using React and Node.js",
-                "Collaborated with cross-functional teams to define and implement new features",
-                "Optimized application performance, reducing load times by 40%"
+                t.experience.exp1Details,
+                "Collaborated with the development team to implement new features",
+                "Participated in code reviews and team meetings"
               ]}
-              skills={["React", "Node.js", "TypeScript", "MongoDB", "AWS"]}
+              skills={["Laravel", "Bootstrap", "Livewire", "PHP", "MySQL"]}
               delay={0.2}
             />
-
+            
             <ExperienceCard
-              role="Software Engineering Intern"
-              company="Digital Solutions"
+              role={t.experience.exp2}
+              company="Municipality of Kénitra"
               type="internship"
-              duration="Jun 2022 - Dec 2022"
-              location="Lyon, France"
+              duration="2022 - 2023"
+              location="Kénitra, Morocco"
               tasks={[
-                "Assisted in developing and testing new features for the company's flagship product",
-                "Wrote unit tests achieving 90% code coverage",
-                "Participated in agile development processes and code reviews"
+                t.experience.exp2Details,
+                "Implemented user authentication and authorization",
+                "Optimized database queries for better performance"
               ]}
-              skills={["Python", "Django", "PostgreSQL", "Docker", "Git"]}
+              skills={["PHP", "Bootstrap", "MySQL", "JavaScript", "jQuery"]}
               delay={0.4}
+              isLast={true}
             />
-
+            
             <ExperienceCard
               role="Web Developer"
               company="Freelance"
@@ -528,36 +530,36 @@ const About = () => {
               {t.education.title}
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-              My academic journey and qualifications
+              {t.education.subtitle}
             </p>
           </motion.div>
 
           <div ref={educationRef} className="max-w-4xl mx-auto relative">
             <div className="space-y-8">
               <EducationCard
-                degree="Master's Degree"
-                year="2023 - 2025"
-                field="Computer Science - Artificial Intelligence"
-                university="University of Paris-Saclay"
-                location="Paris, France"
+                degree={t.education.masters.split(' in ')[0]}
+                year="2024 - 2026"
+                field={t.education.masters.split(' in ')[1] || t.education.masters}
+                university={t.education.mastersDesc.split(', ')[0]}
+                location={t.education.mastersDesc.split(', ').slice(1).join(', ')}
                 delay={0.2}
               />
               
               <EducationCard
-                degree="Bachelor's Degree"
-                year="2020 - 2023"
-                field="Computer Science"
-                university="Sorbonne University"
-                location="Paris, France"
+                degree={t.education.bachelors.split(' in ')[0]}
+                year="2023 - 2024"
+                field={t.education.bachelors.split(' in ')[1] || t.education.bachelors}
+                university={t.education.bachelorsDesc.split(', ')[0]}
+                location={t.education.bachelorsDesc.split(', ').slice(1).join(', ')}
                 delay={0.4}
               />
               
               <EducationCard
-                degree="DUT"
-                year="2018 - 2020"
-                field="Computer Science"
-                university="IUT de Villetaneuse"
-                location="Villetaneuse, France"
+                degree={t.education.diploma}
+                year="2021 - 2023"
+                field=""
+                university={t.education.diplomaDesc.split(', ')[0]}
+                location={t.education.diplomaDesc.split(', ').slice(1).join(', ')}
                 delay={0.6}
                 isLast={true}
               />

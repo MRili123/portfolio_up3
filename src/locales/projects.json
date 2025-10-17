@@ -1,0 +1,92 @@
+{
+  "projects": {
+    "title": "Featured Projects",
+    "viewAll": "View All Projects",
+    "allProjects": "All Projects",
+    "search": "Search projects...",
+    "filterAll": "All",
+    "technologies": "Technologies",
+    "viewProject": "View Project",
+    "noResults": "No projects found matching your criteria",
+    "items": [
+      {
+        "id": 1,
+        "title": "AI Chatbot Platform",
+        "description": "Advanced conversational AI platform with natural language understanding",
+        "detailedDescription": "A comprehensive AI chatbot solution that leverages state-of-the-art NLP models to provide human-like conversations. The platform supports multiple channels including web, mobile, and social media integrations.",
+        "category": "AI/ML",
+        "features": [
+          "Natural language understanding with 95% accuracy",
+          "Multi-channel support (Web, Mobile, Social Media)",
+          "Real-time sentiment analysis",
+          "Comprehensive conversation history"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "E-commerce Analytics Dashboard",
+        "description": "Real-time analytics and insights for e-commerce businesses",
+        "detailedDescription": "A powerful analytics dashboard that provides e-commerce businesses with real-time insights into sales performance, customer behavior, and inventory management.",
+        "category": "Web Development",
+        "features": [
+          "Real-time sales analytics and reporting",
+          "Customer segmentation and behavior analysis",
+          "Inventory and supply chain management",
+          "Automated sales forecasting"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Health & Fitness Tracker",
+        "description": "Comprehensive health and fitness tracking application",
+        "detailedDescription": "A cross-platform mobile application that helps users track their fitness journey, including workouts, nutrition, and health metrics.",
+        "category": "Mobile Development",
+        "features": [
+          "Comprehensive workout tracking and planning",
+          "Nutrition and meal planning with barcode scanning",
+          "Health metrics and progress visualization",
+          "Wearable device integration"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Smart Home Automation System",
+        "description": "IoT platform for home automation and energy management",
+        "detailedDescription": "An advanced IoT platform that enables users to control and automate their smart home devices with features like energy monitoring and security.",
+        "category": "IoT",
+        "features": [
+          "Centralized device control and automation",
+          "Real-time energy monitoring and optimization",
+          "Voice control (Alexa, Google Assistant, Siri)",
+          "Security and surveillance integration"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Blockchain-Based Voting System",
+        "description": "Secure and transparent decentralized voting platform",
+        "detailedDescription": "A blockchain-based voting system that ensures security, transparency, and immutability of votes using smart contracts.",
+        "category": "Blockchain",
+        "features": [
+          "End-to-end verifiable voting",
+          "Smart contract-based vote counting",
+          "Multi-factor voter authentication",
+          "Real-time results and analytics"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "AI-Powered Recommendation Engine",
+        "description": "Personalized content recommendation system using machine learning",
+        "detailedDescription": "A sophisticated recommendation engine that leverages machine learning algorithms to deliver personalized content suggestions.",
+        "category": "AI/ML",
+        "features": [
+          "Personalized content recommendations",
+          "Real-time user behavior analysis",
+          "Multi-criteria recommendation algorithms",
+          "Scalable architecture for large datasets"
+        ]
+      }
+    ]
+  }
+}

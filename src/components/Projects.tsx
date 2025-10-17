@@ -255,7 +255,26 @@ const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const featuredProjects = projectsData.slice(0, 3);
+  // Merge project data with translations
+  const getTranslatedProjects = () => {
+    return projectsData.map((project, index) => {
+      const projectKey = `project${index + 1}` as keyof typeof t.projects;
+      const translatedProject = t.projects[projectKey] as any;
+      
+      return {
+        ...project,
+        title: translatedProject?.title || project.title,
+        description: translatedProject?.description || project.description,
+        detailedDescription: translatedProject?.detailedDescription || project.detailedDescription,
+        role: translatedProject?.role || project.role,
+        duration: translatedProject?.duration || project.duration,
+        features: translatedProject?.features || project.features
+      };
+    });
+  };
+
+  const translatedProjects = getTranslatedProjects();
+  const featuredProjects = translatedProjects.slice(0, 3);
 
   const openProjectModal = (project: Project) => {
     setSelectedProject(project);

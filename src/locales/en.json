@@ -16,25 +16,34 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a passionate AI Assistant and Software Engineer with a Master's degree in Computer Science. I specialize in developing innovative solutions that bridge artificial intelligence and practical software engineering."
+    "description": "I'm a passionate Full Stack Developer with expertise in web development and a strong foundation in computer science. Currently pursuing a Master's degree in Cloud Computing Software Engineering while gaining hands-on experience through internships and personal projects. I specialize in building robust web applications using modern technologies and frameworks.",
+    "email": "jebrane.ilias@gmail.com"
   },
   "skills": {
     "title": "Skills & Expertise",
-    "languages": "Languages",
-    "frameworks": "Frameworks",
-    "tools": "Tools",
-    "aiml": "AI/ML"
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & Platforms",
+    "aiml": "AI/ML & Cloud"
   },
   "education": {
     "title": "Education",
-    "masters": "Master's Degree in Computer Science",
-    "bachelors": "Bachelor's Degree in Computer Science",
-    "mastersDesc": "Advanced studies in Artificial Intelligence and Software Engineering",
-    "bachelorsDesc": "Foundation in Computer Science principles and programming"
+    "subtitle": "My academic journey and qualifications",
+    "masters": "Master's Degree in Cloud Computing Software Engineering",
+    "mastersDesc": "Faculty of Sciences - Kénitra, Morocco (2024-2026)",
+    "bachelors": "Bachelor's Degree in Computer Science and Digital Governance",
+    "bachelorsDesc": "École Supérieure de Technologie de Kénitra (EST-K), Morocco (2023-2024)",
+    "diploma": "Advanced Technician Diploma in Full Stack Digital Development",
+    "diplomaDesc": "Institut Spécialisé de Technologie Appliquée de Kénitra (ISTEA-K), Morocco (2021-2023)"
   },
   "experience": {
-    "title": "Experience",
-    "years": "Years of Experience"
+    "title": "Professional Experience",
+    "exp1": "Full Stack Developer Intern",
+    "exp1Desc": "Zoom In Media, Kénitra (2023-2024)",
+    "exp1Details": "Contributed to the development of a real estate management web application (Al Moulate) using Laravel, Bootstrap, and Livewire.",
+    "exp2": "Back-End Developer Intern",
+    "exp2Desc": "Municipality of Kénitra (2022-2023)",
+    "exp2Details": "Developed a user management observatory web application using native PHP and Bootstrap."
   },
   "projects": {
     "title": "Featured Projects",
@@ -44,7 +53,108 @@
     "filterAll": "All",
     "technologies": "Technologies",
     "viewProject": "View Project",
-    "noResults": "No projects found matching your criteria"
+    "noResults": "No projects found matching your criteria",
+    "project1": {
+      "title": "AI Chatbot Platform",
+      "description": "Advanced conversational AI platform with natural language understanding",
+      "detailedDescription": "A comprehensive AI chatbot solution that leverages state-of-the-art NLP models to provide human-like conversations. The platform supports multiple channels including web, mobile, and social media integrations.",
+      "role": "Full Stack Developer / Team Lead",
+      "duration": "6 months (2023)",
+      "features": [
+        "Natural language understanding with 95% accuracy",
+        "Multi-channel support (Web, Mobile, Social Media)",
+        "Real-time sentiment analysis",
+        "Comprehensive conversation history",
+        "Interactive admin dashboard with analytics",
+        "Customizable response templates",
+        "Multi-language support"
+      ]
+    },
+    "project2": {
+      "title": "E-commerce Analytics Dashboard",
+      "description": "Real-time analytics and insights for e-commerce businesses",
+      "detailedDescription": "A powerful analytics dashboard that provides e-commerce businesses with real-time insights into sales performance, customer behavior, and inventory management. Features advanced data visualization and predictive analytics.",
+      "role": "Frontend Lead Developer",
+      "duration": "5 months (2023)",
+      "features": [
+        "Real-time sales analytics and reporting",
+        "Customer segmentation and behavior analysis",
+        "Inventory and supply chain management",
+        "Automated sales forecasting",
+        "Custom report generation",
+        "Multi-store management",
+        "API integration with major e-commerce platforms"
+      ]
+    },
+    "project3": {
+      "title": "Health & Fitness Tracker",
+      "description": "Comprehensive health and fitness tracking application",
+      "detailedDescription": "A cross-platform mobile application that helps users track their fitness journey, including workouts, nutrition, and health metrics. The app includes AI-powered recommendations and integrates with wearable devices.",
+      "role": "Mobile Developer",
+      "duration": "7 months (2022-2023)",
+      "features": [
+        "Comprehensive workout tracking and planning",
+        "Nutrition and meal planning with barcode scanning",
+        "Health metrics and progress visualization",
+        "Social features and challenges",
+        "Wearable device integration",
+        "Personalized workout and nutrition recommendations",
+        "Offline functionality"
+      ]
+    },
+    "project4": {
+      "title": "Smart Home Automation System",
+      "description": "IoT platform for home automation and energy management",
+      "detailedDescription": "An advanced IoT platform that enables users to control and automate their smart home devices with features like energy monitoring, security, and voice control integration.",
+      "role": "Full Stack Developer",
+      "duration": "8 months (2022)",
+      "features": [
+        "Centralized device control and automation",
+        "Real-time energy monitoring and optimization",
+        "Voice control (Alexa, Google Assistant, Siri)",
+        "Security and surveillance integration",
+        "Energy usage analytics and reporting",
+        "Custom automation rules and schedules",
+        "Multi-user access control"
+      ]
+    },
+    "project5": {
+      "title": "Blockchain-Based Voting System",
+      "description": "Secure and transparent decentralized voting platform",
+      "detailedDescription": "A blockchain-based voting system that ensures security, transparency, and immutability of votes. The platform uses smart contracts to manage the voting process and provides a verifiable audit trail.",
+      "role": "Blockchain Developer",
+      "duration": "6 months (2022)",
+      "features": [
+        "End-to-end verifiable voting",
+        "Smart contract-based vote counting",
+        "Multi-factor voter authentication",
+        "Real-time results and analytics",
+        "Immutable vote records on blockchain",
+        "Anonymous yet verifiable voting",
+        "Multi-language support"
+      ]
+    },
+    "project6": {
+      "title": "AI-Powered Recommendation Engine",
+      "description": "Personalized content recommendation system using machine learning",
+      "detailedDescription": "A sophisticated recommendation engine that leverages machine learning algorithms to deliver personalized content suggestions, improving user engagement and content discovery.",
+      "role": "Machine Learning Engineer",
+      "duration": "7 months (2021-2022)",
+      "features": [
+        "Personalized content recommendations",
+        "Real-time processing of user interactions",
+        "A/B testing framework for algorithms",
+        "User behavior analysis and modeling",
+        "Scalable microservices architecture",
+        "Multi-tenant support",
+        "Automated model training and deployment"
+      ]
+    }
+  },
+  "certificates": {
+    "title": "Certifications",
+    "subtitle": "My professional certifications and completed courses",
+    "viewAll": "View All Certificates"
   },
   "aiAssistant": {
     "title": "Ask Me Anything",
@@ -57,6 +167,7 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Feel free to reach out for collaborations or just a friendly chat",
+    "description": "I'm always excited to collaborate on innovative projects and discuss new opportunities. Whether you have a project in mind or just want to connect, feel free to reach out!",
     "name": "Your Name",
     "email": "Your Email",
     "message": "Your Message",

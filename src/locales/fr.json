@@ -16,25 +16,34 @@
   },
   "about": {
     "title": "À Propos",
-    "description": "Je suis un Assistant IA et Ingénieur Logiciel passionné avec un Master en Informatique. Je me spécialise dans le développement de solutions innovantes qui relient l'intelligence artificielle et l'ingénierie logicielle pratique."
+    "description": "Je suis un développeur Full Stack passionné avec une expertise en développement web et une solide formation en informatique. Actuellement en train de poursuivre un Master en Génie Logiciel pour le Cloud Computing tout en acquérant une expérience pratique à travers des stages et des projets personnels. Je me spécialise dans la création d'applications web robustes en utilisant des technologies et des frameworks modernes.",
+    "email": "jebrane.ilias@gmail.com"
   },
   "skills": {
     "title": "Compétences & Expertise",
-    "languages": "Langages",
-    "frameworks": "Frameworks",
-    "tools": "Outils",
-    "aiml": "IA/ML"
+    "languages": "Langages de Programmation",
+    "frameworks": "Frameworks & Bibliothèques",
+    "tools": "Outils & Plateformes",
+    "aiml": "IA/ML & Cloud"
   },
   "education": {
     "title": "Formation",
-    "masters": "Master en Informatique",
-    "bachelors": "Licence en Informatique",
-    "mastersDesc": "Études avancées en Intelligence Artificielle et Ingénierie Logicielle",
-    "bachelorsDesc": "Fondements en principes informatiques et programmation"
+    "subtitle": "Mon parcours académique et qualifications",
+    "masters": "Master en Génie Logiciel pour le Cloud Computing",
+    "mastersDesc": "Faculté des Sciences - Kénitra, Maroc (2024-2026)",
+    "bachelors": "Licence en Génie Informatique et Gouvernance Digitale",
+    "bachelorsDesc": "École Supérieure de Technologie de Kénitra (EST-K), Maroc (2023-2024)",
+    "diploma": "Diplôme de Technicien Spécialisé en Développement Digital Full Stack",
+    "diplomaDesc": "Institut Spécialisé de Technologie Appliquée de Kénitra (ISTEA-K), Maroc (2021-2023)"
   },
   "experience": {
-    "title": "Expérience",
-    "years": "Années d'Expérience"
+    "title": "Expérience Professionnelle",
+    "exp1": "Stagiaire Développeur Full Stack",
+    "exp1Desc": "Zoom In Media, Kénitra (2023-2024)",
+    "exp1Details": "Participation au développement d'une application web de gestion immobilière (Al Moulate) en utilisant Laravel, Bootstrap et Livewire.",
+    "exp2": "Stagiaire Développeur Back-End",
+    "exp2Desc": "Municipalité de Kénitra (2022-2023)",
+    "exp2Details": "Développement d'une application web pour l'observatoire de gestion des utilisateurs en utilisant PHP natif et Bootstrap."
   },
   "projects": {
     "title": "Projets Vedettes",
@@ -44,7 +53,108 @@
     "filterAll": "Tous",
     "technologies": "Technologies",
     "viewProject": "Voir le Projet",
-    "noResults": "Aucun projet trouvé correspondant à vos critères"
+    "noResults": "Aucun projet trouvé correspondant à vos critères",
+    "project1": {
+      "title": "Plateforme de Chatbot IA",
+      "description": "Plateforme IA conversationnelle avancée avec compréhension du langage naturel",
+      "detailedDescription": "Une solution de chatbot IA complète qui exploite des modèles NLP de pointe pour fournir des conversations semblables à celles des humains. La plateforme prend en charge plusieurs canaux, notamment le web, le mobile et les intégrations des médias sociaux.",
+      "role": "Développeur Full Stack / Chef d'Équipe",
+      "duration": "6 mois (2023)",
+      "features": [
+        "Compréhension du langage naturel avec 95% de précision",
+        "Support multi-canal (Web, Mobile, Réseaux Sociaux)",
+        "Analyse des sentiments en temps réel",
+        "Historique complet des conversations",
+        "Tableau de bord d'administration interactif avec analyses",
+        "Modèles de réponse personnalisables",
+        "Support multilingue"
+      ]
+    },
+    "project2": {
+      "title": "Tableau de Bord d'Analyse E-commerce",
+      "description": "Analyses et informations en temps réel pour les entreprises de commerce électronique",
+      "detailedDescription": "Un tableau de bord d'analyse puissant qui fournit aux entreprises de commerce électronique des informations en temps réel sur les performances des ventes, le comportement des clients et la gestion des stocks. Comprend des visualisations de données avancées et des analyses prédictives.",
+      "role": "Développeur Frontend Principal",
+      "duration": "5 mois (2023)",
+      "features": [
+        "Analyses et rapports des ventes en temps réel",
+        "Segmentation des clients et analyse du comportement",
+        "Gestion des stocks et de la chaîne d'approvisionnement",
+        "Prévisions des ventes automatisées",
+        "Génération de rapports personnalisés",
+        "Gestion multi-magasin",
+        "Intégration API avec les principales plateformes e-commerce"
+      ]
+    },
+    "project3": {
+      "title": "Tracker Santé & Fitness",
+      "description": "Application complète de suivi de la santé et du fitness",
+      "detailedDescription": "Une application mobile multiplateforme qui aide les utilisateurs à suivre leur parcours de fitness, y compris les entraînements, la nutrition et les métriques de santé. L'application comprend des recommandations alimentées par l'IA et s'intègre aux appareils portables.",
+      "role": "Développeur Mobile",
+      "duration": "7 mois (2022-2023)",
+      "features": [
+        "Suivi et planification complets des entraînements",
+        "Planification nutritionnelle et des repas avec scanner de codes-barres",
+        "Métriques de santé et visualisation des progrès",
+        "Fonctionnalités sociales et défis",
+        "Intégration d'appareils portables",
+        "Recommandations personnalisées d'entraînement et de nutrition",
+        "Fonctionnalité hors ligne"
+      ]
+    },
+    "project4": {
+      "title": "Système de Domotique Intelligente",
+      "description": "Plateforme IoT pour la domotique et la gestion de l'énergie",
+      "detailedDescription": "Une plateforme IoT avancée qui permet aux utilisateurs de contrôler et d'automatiser leurs appareils domestiques intelligents avec des fonctionnalités telles que la surveillance de l'énergie, la sécurité et l'intégration du contrôle vocal.",
+      "role": "Développeur Full Stack",
+      "duration": "8 mois (2022)",
+      "features": [
+        "Contrôle et automatisation centralisés des appareils",
+        "Surveillance et optimisation de l'énergie en temps réel",
+        "Contrôle vocal (Alexa, Google Assistant, Siri)",
+        "Intégration de sécurité et surveillance",
+        "Analyses et rapports d'utilisation de l'énergie",
+        "Règles et horaires d'automatisation personnalisés",
+        "Contrôle d'accès multi-utilisateurs"
+      ]
+    },
+    "project5": {
+      "title": "Système de Vote Basé sur la Blockchain",
+      "description": "Plateforme de vote décentralisée sécurisée et transparente",
+      "detailedDescription": "Un système de vote basé sur la blockchain qui garantit la sécurité, la transparence et l'immuabilité des votes. La plateforme utilise des contrats intelligents pour gérer le processus de vote et fournit une piste d'audit vérifiable.",
+      "role": "Développeur Blockchain",
+      "duration": "6 mois (2022)",
+      "features": [
+        "Vote vérifiable de bout en bout",
+        "Comptage des votes basé sur des contrats intelligents",
+        "Authentification multi-facteurs des électeurs",
+        "Résultats et analyses en temps réel",
+        "Enregistrements de vote immuables sur la blockchain",
+        "Vote anonyme mais vérifiable",
+        "Support multilingue"
+      ]
+    },
+    "project6": {
+      "title": "Moteur de Recommandation Alimenté par l'IA",
+      "description": "Système de recommandation de contenu personnalisé utilisant l'apprentissage automatique",
+      "detailedDescription": "Un moteur de recommandation sophistiqué qui exploite des algorithmes d'apprentissage automatique pour fournir des suggestions de contenu personnalisées, améliorant l'engagement des utilisateurs et la découverte de contenu.",
+      "role": "Ingénieur en Apprentissage Automatique",
+      "duration": "7 mois (2021-2022)",
+      "features": [
+        "Recommandations de contenu personnalisées",
+        "Traitement en temps réel des interactions des utilisateurs",
+        "Framework de tests A/B pour les algorithmes",
+        "Analyse et modélisation du comportement des utilisateurs",
+        "Architecture de microservices évolutive",
+        "Support multi-locataire",
+        "Formation et déploiement automatisés de modèles"
+      ]
+    }
+  },
+  "certificates": {
+    "title": "Certifications",
+    "subtitle": "Mes certifications professionnelles et cours complétés",
+    "viewAll": "Voir Toutes les Certifications"
   },
   "aiAssistant": {
     "title": "Posez-moi une Question",
@@ -57,6 +167,7 @@
   "contact": {
     "title": "Contactez-moi",
     "subtitle": "N'hésitez pas à me contacter pour des collaborations ou simplement discuter",
+    "description": "Je suis toujours enthousiaste à l'idée de collaborer sur des projets innovants et de discuter de nouvelles opportunités. Que vous ayez un projet en tête ou que vous souhaitiez simplement vous connecter, n'hésitez pas à me contacter!",
     "name": "Votre Nom",
     "email": "Votre Email",
     "message": "Votre Message",
