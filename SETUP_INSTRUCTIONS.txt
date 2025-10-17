@@ -1,0 +1,32 @@
+# Portfolio Setup Instructions
+
+## 3D Model Setup
+1. Place your 3D model file (ilias3D_hello.glb) in: /public/models/ilias3D_hello.glb
+2. The model should have 'hello' and 'idle' animations
+3. The Hero component is already configured to load and animate it
+
+## CV Files Setup
+Place your CV files in the /public/cv/ directory:
+- /public/cv/cv_en.pdf (English)
+- /public/cv/cv_fr.pdf (French)
+- /public/cv/cv_ar.pdf (Arabic)
+
+The download button will automatically select the correct CV based on the selected language.
+
+## Customization
+- Edit /src/data/skills.ts to update your skills and experience
+- Edit /src/data/projects.ts to add/modify your projects
+- Update social media links in /src/components/Contact.tsx
+- Customize translations in /src/locales/ directory
+
+## Features Included
+✓ Multilingual support (EN, FR, AR)
+✓ Dark/Light mode toggle
+✓ 3D model placeholder with Three.js
+✓ Interactive AI Assistant
+✓ Projects section with hover effects
+✓ Search and filter on All Projects page
+✓ Contact form with validation
+✓ Social media links
+✓ Responsive design
+✓ Smooth animations with Framer Motion

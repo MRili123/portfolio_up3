@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Ilias Jebrane",
+    "title": "Assistant IA & Ingénieur Logiciel",
+    "subtitle": "Créer des solutions intelligentes avec une technologie de pointe",
+    "downloadCV": "Télécharger CV",
+    "viewProjects": "Voir les Projets",
+    "contactMe": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos",
+    "description": "Je suis un Assistant IA et Ingénieur Logiciel passionné avec un Master en Informatique. Je me spécialise dans le développement de solutions innovantes qui relient l'intelligence artificielle et l'ingénierie logicielle pratique."
+  },
+  "skills": {
+    "title": "Compétences & Expertise",
+    "languages": "Langages",
+    "frameworks": "Frameworks",
+    "tools": "Outils",
+    "aiml": "IA/ML"
+  },
+  "education": {
+    "title": "Formation",
+    "masters": "Master en Informatique",
+    "bachelors": "Licence en Informatique",
+    "mastersDesc": "Études avancées en Intelligence Artificielle et Ingénierie Logicielle",
+    "bachelorsDesc": "Fondements en principes informatiques et programmation"
+  },
+  "experience": {
+    "title": "Expérience",
+    "years": "Années d'Expérience"
+  },
+  "projects": {
+    "title": "Projets Vedettes",
+    "viewAll": "Voir Tous les Projets",
+    "allProjects": "Tous les Projets",
+    "search": "Rechercher des projets...",
+    "filterAll": "Tous",
+    "technologies": "Technologies",
+    "viewProject": "Voir le Projet",
+    "noResults": "Aucun projet trouvé correspondant à vos critères"
+  },
+  "aiAssistant": {
+    "title": "Posez-moi une Question",
+    "subtitle": "Chattez avec mon assistant IA pour en savoir plus sur mes compétences et mon expérience",
+    "placeholder": "Posez des questions sur mes compétences, projets ou expérience...",
+    "send": "Envoyer",
+    "thinking": "Réflexion...",
+    "welcome": "Bonjour! Je suis là pour répondre à vos questions sur les compétences, projets et expérience d'Ilias Jebrane. Que souhaitez-vous savoir?"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "N'hésitez pas à me contacter pour des collaborations ou simplement discuter",
+    "name": "Votre Nom",
+    "email": "Votre Email",
+    "message": "Votre Message",
+    "send": "Envoyer le Message",
+    "sending": "Envoi...",
+    "success": "Message envoyé avec succès!",
+    "error": "Échec de l'envoi du message. Veuillez réessayer.",
+    "namePlaceholder": "Jean Dupont",
+    "emailPlaceholder": "jean@exemple.com",
+    "messagePlaceholder": "Votre message ici..."
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "made": "Fait avec",
+    "by": "par"
+  }
+}

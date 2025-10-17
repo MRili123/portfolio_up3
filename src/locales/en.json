@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Ilias Jebrane",
+    "title": "AI Assistant & Software Engineer",
+    "subtitle": "Building intelligent solutions with cutting-edge technology",
+    "downloadCV": "Download CV",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate AI Assistant and Software Engineer with a Master's degree in Computer Science. I specialize in developing innovative solutions that bridge artificial intelligence and practical software engineering."
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "tools": "Tools",
+    "aiml": "AI/ML"
+  },
+  "education": {
+    "title": "Education",
+    "masters": "Master's Degree in Computer Science",
+    "bachelors": "Bachelor's Degree in Computer Science",
+    "mastersDesc": "Advanced studies in Artificial Intelligence and Software Engineering",
+    "bachelorsDesc": "Foundation in Computer Science principles and programming"
+  },
+  "experience": {
+    "title": "Experience",
+    "years": "Years of Experience"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewAll": "View All Projects",
+    "allProjects": "All Projects",
+    "search": "Search projects...",
+    "filterAll": "All",
+    "technologies": "Technologies",
+    "viewProject": "View Project",
+    "noResults": "No projects found matching your criteria"
+  },
+  "aiAssistant": {
+    "title": "Ask Me Anything",
+    "subtitle": "Chat with my AI assistant to learn more about my skills and experience",
+    "placeholder": "Ask about my skills, projects, or experience...",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "welcome": "Hello! I'm here to answer your questions about Ilias Jebrane's skills, projects, and experience. What would you like to know?"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Feel free to reach out for collaborations or just a friendly chat",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@example.com",
+    "messagePlaceholder": "Your message here..."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "made": "Made with",
+    "by": "by"
+  }
+}
